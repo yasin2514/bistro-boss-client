@@ -8,3 +8,12 @@
     width: 100%;
     background-size: cover;
 }
+.btn-1{
+    @apply btn hover:bg-white hover:border-white text-white hover:text-black border-white btn-outline border-0 border-b-4
+}
+.btn-2{
+    @apply btn hover:bg-black text-black border-black hover:border-black btn-outline border-0 border-b-4 
+}
+.btn-3{
+    @apply btn hover:bg-black text-black border-black hover:border-black btn-outline border-0 border-b-4 btn-sm
+}
