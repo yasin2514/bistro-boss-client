@@ -31,13 +31,13 @@ const Menu = () => {
             {/* offered */}
             <MenuCategory items={offered}></MenuCategory>
             {/* dessert */}
-            <MenuCategory items={dessert} title={"dessert's"} subTitle={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."} coverImg={dessertImg}></MenuCategory>
+            <MenuCategory items={dessert} title={"dessert"} subTitle={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."} coverImg={dessertImg}></MenuCategory>
             {/* salad */}
-            <MenuCategory items={salad} title={"salad's"} subTitle={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."} coverImg={pizzaImg}></MenuCategory>
+            <MenuCategory items={salad} title={"salad"} subTitle={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."} coverImg={pizzaImg}></MenuCategory>
             {/* pizza */}
-            <MenuCategory items={pizza} title={"pizza's"} subTitle={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."} coverImg={saladImg}></MenuCategory>
+            <MenuCategory items={pizza} title={"pizza"} subTitle={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."} coverImg={saladImg}></MenuCategory>
             {/* soup */}
-            <MenuCategory items={soup} title={"soup's"} subTitle={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."} coverImg={soupImg}></MenuCategory>
+            <MenuCategory items={soup} title={"soup"} subTitle={"Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s."} coverImg={soupImg}></MenuCategory>
 
         </div>
     );

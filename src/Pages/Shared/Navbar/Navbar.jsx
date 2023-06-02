@@ -4,7 +4,7 @@ const Navbar = () => {
     const navOptions = <>
         <NavLink className={({ isActive }) => isActive ? "text-orange-700" : ""} to={'/'}>Home</NavLink>
         <NavLink className={({ isActive }) => isActive ? "text-orange-700" : ""} to={'/menu'}>Our Menu</NavLink>
-        <NavLink className={({ isActive }) => isActive ? "text-orange-700" : ""} to={'/'}>Home</NavLink>
+        <NavLink className={({ isActive }) => isActive ? "text-orange-700" : ""} to={'/order/salad'}>Order</NavLink>
     </>
     return (
         <div className="navbar fixed py-5 max-w-screen-2xl mx-auto top-0 z-50 bg-opacity-70 bg-black text-white">
