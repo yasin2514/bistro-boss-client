@@ -48,8 +48,6 @@ const Order = () => {
                 <TabPanel>
                     <OrderTab items={drinks}></OrderTab>
                 </TabPanel>
-
-
             </Tabs>
         </div>
     );
