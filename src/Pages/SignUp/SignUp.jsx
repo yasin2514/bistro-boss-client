@@ -20,6 +20,18 @@ const SignUp = () => {
 
                 updateUserProfile(data.name, data.photoUrl)
                     .then(() => {
+                        const manageUser = { email: data.email, name: data.name }
+                        fetch('`http://localhost:5000/users', {
+                            method: "POST",
+                            headers: {
+                                'content-type': "application/json"
+                            },
+                            body: JSON.stringify(manageUser)
+                        })
+                            .then(res => res.json())
+                            .then(data => {
+                                console.log(data);
+                            })
                         Swal.fire({
                             position: 'top-end',
                             icon: 'success',
