@@ -17,3 +17,10 @@
 .btn-3{
     @apply btn hover:bg-black text-black border-black hover:border-black btn-outline border-0 border-b-4 btn-sm
 }
+
+.drawer-side a.active {
+    color: white;
+  }
+.drawer-side a {
+    background-color: transparent;
+  }
