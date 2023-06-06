@@ -97,7 +97,7 @@ const Login = () => {
                             </div>
                             {/* To do: make captcha button disabled*/}
                             <div className="form-control mt-6">
-                                <input disabled={false} className="btn btn-primary" type="submit" value="Login" />
+                                <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
                             </div>
                         </form>
                         <span className='px-7 pb-5'>
