@@ -20,27 +20,30 @@ const SignUp = () => {
 
                 updateUserProfile(data.name, data.photoUrl)
                     .then(() => {
-                        const manageUser = { email: data.email, name: data.name }
-                        fetch('`http://localhost:5000/users', {
+                        const saveUser = { email: data.email, name: data.name }
+                        fetch('http://localhost:5000/users', {
                             method: "POST",
                             headers: {
                                 'content-type': "application/json"
                             },
-                            body: JSON.stringify(manageUser)
+                            body: JSON.stringify(saveUser)
                         })
                             .then(res => res.json())
                             .then(data => {
-                                console.log(data);
+                                console.log(data)
+                                if (data.insertedId) {
+                                    reset();
+                                    Swal.fire({
+                                        position: 'top-end',
+                                        icon: 'success',
+                                        title: 'User Created Successfully',
+                                        showConfirmButton: false,
+                                        timer: 1500
+                                    })
+                                    navigate('/');
+                                }
                             })
-                        Swal.fire({
-                            position: 'top-end',
-                            icon: 'success',
-                            title: 'User Created Successfully',
-                            showConfirmButton: false,
-                            timer: 1500
-                        })
-                        navigate('/');
-                        reset();
+
                     })
                     .catch(error => {
                         console.log(error.message);
