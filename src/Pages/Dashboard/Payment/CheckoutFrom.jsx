@@ -80,7 +80,7 @@ const CheckoutFrom = ({ price, cart }) => {
                 email: user?.email,
                 name: user?.displayName,
                 transactionId: paymentIntent.id,
-                amount: price,
+                price: price,
                 date: new Date(),
                 quantity: cart.length,
                 cartItems: cart.map(item => item._id),

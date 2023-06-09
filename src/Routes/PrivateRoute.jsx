@@ -8,7 +8,6 @@ const PrivateRoute = ({ children }) => {
 
     if (loading) {
         return <progress className="progress progress-primary w-56" value={0} max="100"></progress>
-
     }
     if (user) {
         return children;
